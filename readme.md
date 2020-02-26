@@ -38,4 +38,4 @@ java -jar cc0.jar -s <input> -o <output>
 
 ## Acknowlegement
 
-Special thanks to [yiranyyu](https://github.com/yiranyyu).
+- Special thanks to [yiranyyu](https://github.com/yiranyyu).
