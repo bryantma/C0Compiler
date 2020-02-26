@@ -4,7 +4,7 @@ A java implementation of C0 compiler.
 
 ## Standards
 
-See: [C0 Wiki][https://github.com/BUAA-SE-Compiling].
+See: [C0 Wiki](https://github.com/BUAA-SE-Compiling).
 
 ## Deployment
 
@@ -18,6 +18,9 @@ cd out
 #get assembly
 java -jar cc0.jar -s <input>
 
+#get ELF binary (unstable):
+jave -jar cc0.jar -c <input>
+
 #specify output name
 java -jar cc0.jar -s <input> -o <output>
 ```
@@ -26,6 +29,7 @@ java -jar cc0.jar -s <input> -o <output>
 
 - C0 basics
 - C0 comment
+- C0 scoped variables
 
 ## Undefined Behaviors
 - integer overflow : compile error
@@ -34,4 +38,4 @@ java -jar cc0.jar -s <input> -o <output>
 
 ## Acknowlegement
 
-Special thanks to [yiranyyu][https://github.com/yiranyyu].
+Special thanks to [yiranyyu](https://github.com/yiranyyu).
