@@ -1,0 +1,43 @@
+mkdir out
+cd out
+mkdir javafx
+cd javafx
+mkdir beans
+mkdir util
+cd ..
+mkdir analyser
+mkdir binaries
+mkdir excptions
+mkdir generator
+mkdir symTable
+mkdir tokenizer
+mkdir util
+cd ..
+cd ./src/
+javac -cp ".:./util/argparser.jar:" -encoding utf8 ./cc0.java -d ../out/
+javac -encoding utf8 ./javafx/beans/NamedArg.java  -d ../out/
+javac -encoding utf8 ./javafx/util/Pair.java  -d ../out/
+javac -encoding utf8 ./analyser/AST.java  -d ../out/
+javac -encoding utf8 ./analyser/ASTType.java  -d ../out/
+javac -encoding utf8 ./analyser/Parser.java  -d ../out/
+javac -encoding utf8 ./binaries/Const.java  -d ../out/
+javac -encoding utf8 ./binaries/ELF.java  -d ../out/
+javac -encoding utf8 ./binaries/Function.java  -d ../out/
+javac -encoding utf8 ./tokenizer/DFAState.java  -d ../out/
+javac -encoding utf8 ./tokenizer/Tokenizer.java  -d ../out/
+javac -encoding utf8 ./tokenizer/Token.java  -d ../out/
+javac -encoding utf8 ./tokenizer/TokenLib.java  -d ../out/
+javac -encoding utf8 ./tokenizer/TokenType.java  -d ../out/
+javac -encoding utf8 ./generator/Generator.java  -d ../out/
+javac -encoding utf8 ./generator/Pcode.java  -d ../out/
+javac -encoding utf8 ./generator/PcodeInfo.java  -d ../out/
+javac -encoding utf8 ./generator/PcodeType.java  -d ../out/
+javac -encoding utf8 ./symTable/ScopedTable.java  -d ../out/
+javac -encoding utf8 ./symTable/Symbol.java  -d ../out/
+javac -encoding utf8 ./symTable/Table.java  -d ../out/
+javac -encoding utf8 ./util/Pos.java  -d ../out/
+javac -encoding utf8 ./exceptions/tokenizerExceptions/CharOverflowException.java  -d ../out/
+javac -encoding utf8 ./exceptions/tokenizerExceptions/IntegerOverflowException.java  -d ../out/
+javac -encoding utf8 ./exceptions/tokenizerExceptions/InvalidCharacterException.java  -d ../out/
+javac -encoding utf8 ./exceptions/tokenizerExceptions/InvalidTypeException.java  -d ../out/
+javac -encoding utf8 ./exceptions/tokenizerExceptions/TokenizerException.java  -d ../out/
